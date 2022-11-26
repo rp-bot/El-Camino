@@ -2,7 +2,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow:scroll;
     background-color: #F2E060;
   }
   
@@ -20,6 +20,7 @@ ul {
     color: rgb(28, 28, 28);
     text-align: right;
     padding: 14px 16px;
+    margin:0;
     text-decoration: none;
   }
   li img{
@@ -39,4 +40,9 @@ ul {
 .homepage-header-img{
     background-image: url("img/background\ header\ img.png");
  /* background-color: #cccccc; */
+}
+.homepage-header{
+    display: flex;
+    justify-content: center;
+    font-size: 46px;
 }
