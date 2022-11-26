@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'main-font';
+    src: url('/fonts/Alatsi-Regular.ttf');
+}
+
+/* main page */
 ul {
+    font-family: main-font;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,7 +13,6 @@ ul {
     background-color: #F2E060;
   }
   
-
 .home {
   float: left;
   font-weight: bold;
@@ -20,7 +26,6 @@ li a {
   color: rgb(28, 28, 28);
   text-align: right;
   padding: 14px 16px;
-    margin:0;
   text-decoration: none;
 }
 li img {
@@ -28,34 +33,45 @@ li img {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
-  margin: 0;
+
   padding: 14px 14px;
 }
 
 .homepage-header-img{
     background-image: url("img/background\ header\ img.png");
- /* background-color: #cccccc; */
+
 }
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+
+/* li a:hover {
   background-color: #111;
-}
+} */
 
-main {
-  background-color: aqua;
-}
-
-.footer {
-  background-color: #cefaea;
-  display: flex;
-}
-
-footer p {
-  background-color: #f2e060;
-}
 
 .homepage-header{
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+
+}
+.homepage-header h1{
+    font-family: main-font;
+    font-weight: bold;
     font-size: 46px;
 }
+
+
+
+
+
+
+
+
+/* about us */
+.footer {
+    background-color: #cefaea;
+    display: flex;
+  }
+  
+  footer p {
+    background-color: #f2e060;
+  }
