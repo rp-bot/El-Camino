@@ -37,3 +37,12 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  .footer {
+    background-color: #CEFAEA;
+    display: flex;
+  }
+
+  footer p {
+    background-color: #F2E060;
+  }
