@@ -48,17 +48,21 @@ li img {
 
 
 .homepage-header{
-    display: flex;
+    display: grid;
     justify-content: center;
     padding-top: 100px;
+    font-family: main-font;
 
 }
 .homepage-header h1{
-    font-family: main-font;
+    /* grid-column:span; */
     font-weight: bold;
     font-size: 46px;
 }
+.homepage-header p{
 
+    font-size: 20px;
+}
 
 
 
