@@ -11,6 +11,7 @@ ul {
 
 .home{
     float: left;
+    font-weight: bold;
   }
   li {
     float: right;
@@ -22,6 +23,14 @@ ul {
     text-align: right;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  li img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin:0;
+  padding: 14px 14px;
   }
   
   /* Change the link color to #111 (black) on hover */
