@@ -1,6 +1,4 @@
 ul {
-    /* display:flex;
-    justify-content: end; */
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,3 +35,8 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+.homepage-header{
+    background-image: url("img/background\ header\ img.png");
+ /* background-color: #cccccc; */
+}
