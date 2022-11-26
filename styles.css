@@ -35,3 +35,8 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+  .homepage-header{
+    background-image: url("img/background\ header\ img.png");
+ /* background-color: #cccccc; */
+}
