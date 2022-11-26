@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'main-font';
+    src: url('/fonts/Alatsi-Regular.ttf');
+}
+
 /* main page */
 ul {
+    font-family: main-font;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -44,12 +50,13 @@ li img {
 .homepage-header{
     display: flex;
     justify-content: center;
-    padding: 0;
+    padding-top: 100px;
 
 }
 .homepage-header h1{
-    font-size:large;
+    font-family: main-font;
     font-weight: bold;
+    font-size: 46px;
 }
 
 
