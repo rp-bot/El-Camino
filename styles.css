@@ -3,21 +3,22 @@
     margin: 0;
   }
   
-  body {
-    font-family: Arial, Tahoma, Serif;
-    color: #263238;
-  }
 
   nav {
+    background: #F2E060; /* 4 */
+  }
+
+  h2{
     display: flex; /* 1 */
-    justify-content: space-between; /* 2 */
-    padding: 1rem 2rem; /* 3 */
-    background: #cfd8dc; /* 4 */
+    justify-content:left;
+    margin-left: 2rem;
   }
   
   nav ul {
     display: flex; /* 5 */
+    justify-content:space-evenly;
     list-style: none; /* 6 */
+    margin-right: 4rem;
   }
   
   nav li {
@@ -29,20 +30,9 @@
     color: #0d47a1
   }
 
-  /* 
-  Extra small devices (phones, 600px and down) 
-*/
-@media only screen and (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-    nav ul {
-      flex-direction: column;
-      padding-top: 0.5rem;
-    }
-    nav li {
-      padding: 0.5rem 0;
-    }
-  } 
+.navbar{
+    font-family: Arial, Tahoma, Serif;
+    color: #263238;
+    font-size:medium;
+}
 
-  
