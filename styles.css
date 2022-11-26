@@ -1,12 +1,12 @@
+/* main page */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow:scroll;
+    overflow:hidden;
     background-color: #F2E060;
   }
   
-
 .home {
   float: left;
   font-weight: bold;
@@ -20,7 +20,6 @@ li a {
   color: rgb(28, 28, 28);
   text-align: right;
   padding: 14px 16px;
-    margin:0;
   text-decoration: none;
 }
 li img {
@@ -28,30 +27,40 @@ li img {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
-  margin: 0;
+
   padding: 14px 14px;
 }
 
 .homepage-header-img{
     background-image: url("img/background\ header\ img.png");
- /* background-color: #cccccc; */
+
 }
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+
+/* li a:hover {
   background-color: #111;
-}
+} */
 
-.footer {
-  background-color: #cefaea;
-  display: flex;
-}
-
-footer p {
-  background-color: #f2e060;
-}
 
 .homepage-header{
     display: flex;
     justify-content: center;
     font-size: 46px;
 }
+
+
+
+
+
+
+
+
+
+/* about us */
+.footer {
+    background-color: #cefaea;
+    display: flex;
+  }
+  
+  footer p {
+    background-color: #f2e060;
+  }
