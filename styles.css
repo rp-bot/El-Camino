@@ -80,8 +80,10 @@ nav li img {
   font-weight: bold;
   font-size: 46px;
 }
-.homepage-header p {
-  font-size: 20px;
+
+.homepage-header h2{
+  font-weight: bold;
+  font-size: 32px;
 }
 
 .mainbtn {
@@ -115,29 +117,76 @@ nav li img {
   height: 1690px;
   background-color: #f8f8f8;
   display: grid;
-  justify-content: end;
-  padding-top: 40px;
-  padding-right: 30%;
+  justify-content: center;
+  padding-top: 20px;
+  /* padding-right: 30%; */
 }
 
 .menu-preview-text {
   font-family: main-font;
-  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  font-size:24px;
   text-decoration: underline;
 }
-
-.gallery {
+.menu-preview-gallery{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 15px;
+  column-gap: 8px;
+  row-gap: 8px;
+  padding: 20px 0 20px 0;
 }
 
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.gallery-img1{
+  grid-column-start: 1;
+  grid-column-end: 1;
 }
+.gallery-img2{
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.secondary-button{
+  font-family: main-font;
+  color: #0BA76E ;
+  font-size: 16px;
+  margin: 0 40% 20px;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 2px solid #0BA76E;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: color 200ms ease-out 50ms;
+}
+.secondary-button:hover {
+  color: #f8f8f8 !important;
+  background: #0BA76E;
+  transition: background-color 150ms ease-out 100ms;
+}
+
+.about-us-preview{
+  display: grid;
+  column-gap: 8px;
+  row-gap: 8px;
+  font-family: main-font;
+}
+.about-us-preview h2{
+  grid-column-start:2 ;
+  grid-column-end: 2;
+}
+
+.about-us-preview img{
+  grid-row-start:2;
+  grid-column-start:1 ;
+  grid-column-end: 1;
+  width: 50%;
+}
+.about-us-preview p{
+  grid-row-start:2;
+  grid-column-start:2 ;
+  grid-column-end: 2;
+  font-size: 20px;
+  margin: 0 auto;}
+
+
 
 /* about us */
 .aboutus-wrapper {
