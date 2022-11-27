@@ -63,7 +63,7 @@ nav li img {
   background-image: url("img/background\ header\ img.png");
   background-color: rgba(242, 224, 96, 0.1);
   margin: 0;
-  padding: 0;
+  
 }
 
 /* li a:hover {
@@ -73,7 +73,7 @@ nav li img {
 .homepage-header {
   display: grid;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0 28px 0;
   font-family: main-font;
 }
 .homepage-header h1 {
@@ -84,6 +84,66 @@ nav li img {
 .homepage-header p {
   font-size: 20px;
 }
+
+
+.mainbtn {
+  font-family: main-font;
+  color: #0BA76E ;
+  font-size: 16px;
+  /* text-shadow: 1px 1px 0px #ffffff; */
+  /* box-shadow: 1px 1px 1px #BEE2F9; */
+  margin: 0 30em 0 0;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 2px solid #0BA76E;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: color 200ms ease-out 50ms;
+}
+.mainbtn:hover {
+  color: #f8f8f8 !important;
+  background: #0BA76E;
+  transition: background-color 150ms ease-out 100ms;
+}
+
+.pagebreak{
+  display: block;
+  height: 20px;
+  background-color: #0BA76E;
+}
+
+.menu-preview{
+  display: block;
+  height: 1690px;
+  background-color: #f8f8f8;
+  display: grid;
+  justify-content: end;
+  padding-top: 40px;
+  padding-right: 30%;
+}
+
+.menu-preview-text{
+  font-family: main-font;
+  font-size:24px;
+  text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
 
 /* about us */
 
