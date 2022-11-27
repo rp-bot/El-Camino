@@ -1,56 +1,54 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
 @font-face {
-    font-family: 'main-font';
-    src: url('/fonts/Alatsi-Regular.ttf');
+  font-family: "main-font";
+  src: url("/fonts/Alatsi-Regular.ttf");
 }
 
-/* main page */
+/* nav */
 nav {
   list-style-type: none;
   font-family: main-font;
-  overflow:hidden;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   background-color: rgb(242, 224, 96);
   padding-right: 10%;
-  }
-  
+}
+
 .home {
   float: left;
-  display:flex;
+  display: flex;
   font-weight: bold;
   padding-left: 20%;
   cursor: pointer;
 }
-.home a{
+.home a {
   padding: 14px 4px;
 }
-.home img{
+.home img {
   display: block;
   padding-right: 0px;
   /* padding-top: 15px; */
-  width:20px;
+  width: 20px;
   height: 20px;
 }
 
-
-li {
+nav li {
   float: right;
-  
 }
 
-li a {
+nav li a {
   display: block;
   color: rgb(28, 28, 28);
   text-align: right;
   padding: 14px 8px;
   text-decoration: none;
 }
-li img {
+nav li img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -60,34 +58,31 @@ li img {
   cursor: pointer;
 }
 
-.homepage-header-img{
-    background-image: url("img/background\ header\ img.png");
-    background-color: rgba(242, 224, 96,0.1) ;
-    margin: 0;
-    padding: 0;
-
+/* Home Page */
+.homepage-header-img {
+  background-image: url("img/background\ header\ img.png");
+  background-color: rgba(242, 224, 96, 0.1);
+  margin: 0;
+  padding: 0;
 }
 
 /* li a:hover {
   background-color: #111;
 } */
 
-
-.homepage-header{
-    display: grid;
-    justify-content: center;
-    padding-top: 100px;
-    font-family: main-font;
-
+.homepage-header {
+  display: grid;
+  justify-content: center;
+  padding-top: 100px;
+  font-family: main-font;
 }
-.homepage-header h1{
-    /* grid-column:span; */
-    font-weight: bold;
-    font-size: 46px;
+.homepage-header h1 {
+  /* grid-column:span; */
+  font-weight: bold;
+  font-size: 46px;
 }
-.homepage-header p{
-
-    font-size: 20px;
+.homepage-header p {
+  font-size: 20px;
 }
 
 
@@ -118,13 +113,26 @@ li img {
 
 
 /* about us */
-.footer {
-    background-color: #cefaea;
-    display: flex;
-    font-family: main-font;
 
-  }
-  
-  footer p {
-    background-color: #f2e060;
-  }
+/* footer */
+.footer {
+  background-color: #cefaea;
+  height: auto;
+  display: flex;
+  font-family: main-font;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+footer aside {
+  flex-basis: 25%;
+
+}
+
+footer p {
+  background-color: #f2e060;
+  flex-basis: 100%;
+  margin-bottom: 0%;
+  text-align: center;
+}
