@@ -167,29 +167,20 @@ nav li img {
 
 .about-us-preview{
   display: grid;
+  justify-content: center;
   column-gap: 8px;
   row-gap: 8px;
   font-family: main-font;
 }
 .about-us-preview h2{
-  grid-column-start:2 ;
-  grid-column-end: 2;
+  text-align: center;
 }
 
-.about-us-preview img{
-  grid-row-start:2;
-  grid-column-start:1 ;
-  grid-column-end: 1;
-  width: 50%;
-}
+
+
 .about-us-preview p{
-  grid-row-start:2;
-  grid-column-start:2 ;
-  grid-column-end: 2;
-  font-size: 20px;
-  margin: 0 auto;}
-
-
+  text-align: center;
+}
 
 /* about us */
 
