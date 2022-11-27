@@ -197,21 +197,45 @@ nav li img {
 .footer {
   background-color: #cefaea;
   height: auto;
+  font-family: "main-font";
   display: flex;
-  font-family: main-font;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.footer-nav {
+  overflow: visible;
+  flex-basis: 100%;
+  margin-top: 20px;
+  padding-left: 14.5%;
+  background-color: #cefaea;
+}
+
+.footer-nav li {
+  float: left;
 }
 
 footer aside {
-  flex-basis: 25%;
+  flex-basis: 37%;
+  margin: 5px;
+}
 
+footer aside h2,
+footer aside h3 {
+  padding-left: 38px;
+}
+
+footer aside ul {
+  list-style-type: none;
 }
 
 footer p {
   background-color: #f2e060;
   flex-basis: 100%;
   margin-bottom: 0%;
-  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15%;
+  text-align: left;
 }
