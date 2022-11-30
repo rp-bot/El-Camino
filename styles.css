@@ -114,7 +114,7 @@ nav li img {
 
 .menu-preview {
   display: block;
-  height: 1690px;
+  /* height: 1690px; */
   background-color: #f8f8f8;
   display: grid;
   justify-content: center;
@@ -163,6 +163,7 @@ nav li img {
   font-size: 16px;
   margin: 20px 40%;
   padding: 10px 25px;
+  height:52px;
   border-radius: 4px;
   border: 2px solid #0ba76e;
   background: #f8f8f8;
@@ -174,10 +175,10 @@ nav li img {
   background: #0ba76e;
   transition: background-color 150ms ease-out 100ms;
 }
-.about-us-header2 {
-  font-family: main-font;
-  font-size: 24px;
-
+.about-us-header2{
+  font-family:main-font;
+  font-size: 44px; 
+  
   margin: 0;
   padding: 0;
   /* height:10px; */
@@ -200,12 +201,13 @@ nav li img {
   grid-area: a;
   justify-self: end;
   width: auto;
+  height: 80%;
 }
 .about-us-preview p {
   grid-area: b;
   text-align: left;
   justify-self: start;
-  font-size: 16px;
+  font-size: 32px;
   font-family: main-font;
 }
 
