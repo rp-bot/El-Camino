@@ -124,10 +124,13 @@ nav li img {
 
 .menu-preview-text {
   font-family: main-font;
+  color: black  ;
   display: flex;
   justify-content: center;
-  font-size:24px;
+  font-size:44px;
+  margin:20px 0;
   text-decoration: underline;
+  cursor:pointer;
 }
 .menu-preview-gallery{
 
@@ -161,6 +164,7 @@ nav li img {
 
 .secondary-button{
   font-family: main-font;
+
   color: #0BA76E ;
   font-size: 16px;
   margin: 20px 40%;
@@ -179,11 +183,13 @@ nav li img {
 }
 .about-us-header2{
   font-family:main-font;
+  color: black;
+  text-decoration: underline;
   font-size: 44px; 
-  
-  margin: 0;
+  cursor: pointer;
+  margin: 20px 0;
   padding: 0;
-  /* height:10px; */
+  text-decoration: underline;
   justify-content:center;
   text-align: center;
 
@@ -192,7 +198,8 @@ nav li img {
   display: grid; 
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr; 
-  gap: 8px 20px; 
+  gap: 8px 20px;
+  margin: 0 0 30px;
   grid-template-areas: 
     "a b"; 
   justify-content: start; 
@@ -205,13 +212,13 @@ nav li img {
   grid-area:a;
   justify-self: end;
   width: auto;
-  height: 80%;
+  height: 100%;
 }
 .about-us-preview p{
   grid-area:b;
   text-align: left;
   justify-self: start;
-  font-size: 32px;
+  font-size: 24px;
   font-family: main-font;
 }
 
