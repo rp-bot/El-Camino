@@ -196,6 +196,7 @@ nav li img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 8px 20px;
+  margin: 0 0 30px;
   grid-template-areas: "a b";
   justify-content: start;
   align-content: center;
@@ -293,7 +294,7 @@ nav li img {
 .footer {
   background-color: #cefaea;
   height: auto;
-  font-family: "main-font";
+  font-family: main-font;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -310,6 +311,7 @@ nav li img {
 
 .footer-nav li {
   float: left;
+  cursor: pointer;
 }
 
 footer aside {
