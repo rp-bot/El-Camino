@@ -348,3 +348,17 @@ footer p {
   padding-left: 15%;
   text-align: left;
 }
+
+
+/* cart */
+.cart{
+  background-color:#f8ed96;
+  height: 1000px;
+  width: auto;
+}
+.cart-container{
+  color: aliceblue;
+  height: auto;
+  width: 100px;
+  margin: 100px;
+}
