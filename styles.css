@@ -372,14 +372,34 @@ footer p {
 
 
 /* cart */
-.cart{
-  background-color:#f8ed96;
-  height: 1000px;
-  width: auto;
+.cart {  
+  display: grid;
+  grid-template-columns: 80% 19%;
+  grid-template-rows: 500px;
+  gap: 1% 1%;
+  grid-auto-flow: row;
+  justify-content: start;
+  align-content: center;
+  justify-items: end;
+  align-items: center;
+  grid-template-areas:
+    "a b";
+    background-color: #f2e060;
 }
-.cart-container{
-  color: aliceblue;
-  height: auto;
-  width: 100px;
-  margin: 100px;
+
+.cart-container {
+  grid-area: a;
+  justify-self: center;
+  align-self: start;
+  width: 90%;
+  height: 90%;
+  margin: 1%;
+  background-color: aliceblue;
+}
+
+.payment-container {
+  grid-area: b;
+  justify-self: center;
+
+  background-color: aliceblue;
 }
