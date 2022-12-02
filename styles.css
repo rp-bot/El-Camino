@@ -439,3 +439,29 @@ footer p {
 
   background-color: aliceblue;
 }
+
+
+/* Account Manager */
+
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 90%;
+  gap: 1% 1%;
+  grid-auto-flow: row;
+  justify-content: start;
+  align-content: center;
+  justify-items: end;
+  align-items: center;
+  grid-template-areas:
+    ".";
+}
+
+.account-form{
+  justify-self: center;
+  margin: 40px;
+  border-radius: 10px;
+  width: 20%;
+  height:600px;
+  background-color: #f2e060;
+}
