@@ -310,6 +310,7 @@ nav li img {
   box-sizing: border-box;
   border: 3px solid #FCF3BF;
   border-radius: 15px;
+  font-family: "main-font";
   /*background-color: aqua;*/
 }
 
@@ -318,8 +319,43 @@ nav li img {
 }
 
 .order-info {
-  height: 1000px;
-  /*background-color: #cefaea;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.order-num {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #cefaea;
+}
+
+.order-info aside {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.order-summary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.order-summary div {
+  display: flex;
+  flex-basis: 100%;
+  width: 820px;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+.order-summary div h3 {
+  text-align: left;
+  flex-basis: 50%;
+  margin: 0px;
+  background-color: #cefaea;
 }
 
 /* footer */
