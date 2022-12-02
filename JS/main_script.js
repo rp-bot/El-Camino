@@ -1,5 +1,3 @@
-document.getElementById("ordernow").onclick = OrderNow();
-
-function OrderNow() {
+function ordernow() {
 	location.href = "menu.html";
 }
