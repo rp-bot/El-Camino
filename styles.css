@@ -462,6 +462,24 @@ footer p {
   margin: 40px;
   border-radius: 10px;
   width: 20%;
-  height:600px;
   background-color: #f2e060;
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 40% 10% 10% 20% 20%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"; 
+  justify-self: center; 
+  width: 90%; 
+  height: 90%; 
+}
+.account-form-header{
+  justify-self: center; 
+  align-self: end; 
+  font-family: main-font;
+  font-size: 24px;
 }
