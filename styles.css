@@ -408,41 +408,35 @@ footer p {
 
 
 /* cart */
-.cart {  
-  display: grid;
-  grid-template-columns: 80% 19%;
-  grid-template-rows: 500px;
-  gap: 1% 1%;
-  grid-auto-flow: row;
-  justify-content: start;
-  align-content: center;
-  justify-items: end;
-  align-items: center;
-  grid-template-areas:
-    "a b";
-    background-color: #f2e060;
+.fullcart {
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."
+    "."; 
 }
-
+.fullcart h1 {
+  justify-self: center; 
+  align-self: end; 
+  width: 50%; 
+  height: 50%; 
+}
 .cart-container {
-  grid-area: a;
-  justify-self: center;
-  align-self: start;
-  width: 90%;
-  height: 90%;
-  margin: 1%;
-  background-color: aliceblue;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."; 
 }
-
-.payment-container {
-  grid-area: b;
-  justify-self: center;
-
-  background-color: aliceblue;
-}
-
 
 /* Account Manager */
-
 .container{
   display: grid;
   grid-template-columns: 100%;
