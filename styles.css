@@ -448,6 +448,7 @@ footer p {
   grid-template-columns: 100%;
   grid-template-rows: 90%;
   gap: 1% 1%;
+  margin: 0 20%;
   grid-auto-flow: row;
   justify-content: start;
   align-content: center;
@@ -455,17 +456,18 @@ footer p {
   align-items: center;
   grid-template-areas:
     ".";
+  font-family: main-font;
 }
 
 .account-form{
   justify-self: center;
-  margin: 40px;
+  margin: 40px; 
   border-radius: 10px;
   width: 20%;
   background-color: #f2e060;
   display: grid; 
   grid-template-columns: 100%; 
-  grid-template-rows: 40% 10% 10% 20% 20%; 
+  grid-template-rows: 30% 10% 10% 20% 10%; 
   gap: 0px 0px; 
   grid-template-areas: 
     "a"
@@ -474,12 +476,70 @@ footer p {
     "d"
     "e"; 
   justify-self: center; 
-  width: 90%; 
-  height: 90%; 
+
+  height: 30vh;
+  width: 50vw;
 }
+
 .account-form-header{
   justify-self: center; 
   align-self: end; 
   font-family: main-font;
   font-size: 24px;
+}
+.account-form-uname{
+  margin: 0 12px;
+  padding-left: 8px;
+  font-size: 16px;
+  align-self: center; 
+  border: 1.5px solid #0ba76e;
+  font-family: main-font;
+  font-size: 12px;
+}
+.account-form-psw{
+  margin: 0 12px;
+  padding-left: 8px;
+  font-size: 16px;
+  align-self: center; 
+  border: 1.5px solid #0ba76e;
+  font-family: main-font;
+  font-size: 12px;
+}
+
+.account-form-submitbtn{
+  margin: 12px;
+  padding: 4px 40px;
+  justify-self: left;
+  align-self: center; 
+  font-family: main-font;
+  font-size: 12px;
+
+  color: #0ba76e;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #0ba76e;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: color 200ms ease-out 50ms;
+}
+
+.account-form-submitbtn:hover {
+  color: #f8f8f8 !important;
+  background: #0ba76e;
+  transition: background-color 150ms ease-out 100ms;
+}
+
+.account-form-footer{
+  margin: 12px;
+  justify-self: left;
+  align-self: center; 
+  font-family: main-font;
+  font-size: 12px;
+}
+.account-form-footer a{
+  cursor: pointer;
+  transition: color 200ms ease-out 50ms;
+}
+.account-form-footer a:hover {
+  color: #6b6b6b !important;
 }
