@@ -37,3 +37,7 @@ const footitem = [
         des: "Mexican pulled pork tacos Made with a blend of Mexican flavour taco seasonings. Superb taco sauce that flavours the slow-cooked pork perfectly. Topped with melted Perfect Italiano Mexican Cheese and enjoy."
     }
 ]
+
+const food = fooditem.map(item => {
+    
+})
