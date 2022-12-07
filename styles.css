@@ -269,15 +269,26 @@ nav li img {
   background-color: #fcf3bf;
 }
 
-.food-container {
-  background-color: #0ba76e;
+.foodbox {
+  /* display */
 }
 
 .content {
+  margin-bottom: 30px;
   font-family: "main-font";
   display: flex;
   flex-direction: row;
-  background-color: #6b6b6b;
+  background-color: white;
+}
+
+.c-image {
+  width: 500px;
+  height: 375px
+}
+
+.c-image img {
+  width: 100%;
+  height: 100%;
 }
 
 .c-info {
@@ -289,25 +300,21 @@ nav li img {
   margin-bottom: 35px;
   flex-basis: 50%;
   text-align: left;
-  background-color: #cefaea;
 }
 
 .c-title {
   font-size: 30px;
   flex-basis: 100%;
-  background-color: #0ba76e;
 }
 
 .c-des {
   margin-top: 50px;
-  flex-basis: 100%;
-  background-color: #0ba76e;
+  flex-basis: 90%;
 }
 
 .c-price {
   align-self: flex-end;
   font-size: 24px;
-  background-color: #0ba76e;
 }
 
 .button-container {
@@ -316,11 +323,16 @@ nav li img {
   align-self: flex-end;
   justify-content: space-around;
   width: 100px;
-  height: 30px;
-  background-color: #0ba76e;
+  height: 25px;
+  margin-left: 30px;
+}
+
+.button-container p {
+  margin: 1px;
 }
 
 .minusbtn, .plusbtn {
+  padding: 5px;
   text-align: center;
   color: white;
   background-color: black;

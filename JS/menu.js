@@ -36,9 +36,6 @@ const footitem = [
 		type: "Entree",
 		des: "Mexican pulled pork tacos Made with a blend of Mexican flavour taco seasonings. Superb taco sauce that flavours the slow-cooked pork perfectly. Topped with melted Perfect Italiano Mexican Cheese and enjoy.",
 	},
-];
-
-const dessert = [
 	{
 		FoodName: "Churros",
 		foodimg: "img/churros.jpg",
@@ -67,9 +64,6 @@ const dessert = [
 		type: "Dessert",
 		des: "Sweet and melt-in-you-mouth custard oozing with caramel sauce",
 	},
-];
-
-const drink = [
 	{
 		FoodName: "Horchata",
 		foodimg: "img/horchata.jpg",
@@ -92,3 +86,59 @@ const drink = [
 		des: "A choice of 4 different sodas",
 	},
 ];
+
+const food = footitem.map(item => {
+    const listitem = 
+    `<div class="foodbox ${item.type}">
+        <div class="content">
+            <div class="c-image">
+                <img src="${item.foodimg}" alt="">
+            </div>
+            <div class="c-info">
+                <span class="c-title">${item.FoodName}</span>
+                <p class="c-des">${item.des}</p>
+                <span class="c-price">${item.price}</span>
+                <div class="button-container">
+                    <button type="button" class="minusbtn" name="minus">
+                    -
+                    </button>
+                    <p>0</p>
+                    <button type="button" class="plusbtn" name="plus">
+                    +
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    foodContainer.innerHTML += listitem;
+})
+
+const foodbox = document.querySelectorAll('.foodbox');
+const menu = document.querySelectorAll('.menu-nav');
+
+menu.forEach(m => {
+    m.addEventListener('click', e=>{
+        console.log(e.target.innerHTML)
+        foodbox.forEach(box => {
+            box.style.display = "none";
+            if(e.target.innerHTML === 'Entree'){
+                if(box.classList.contains('Entree'))
+                {
+                    box.style.display = "block";
+                }
+            }
+            else if(e.target.innerHTML === 'Dessert'){
+                if(box.classList.contains('Dessert'))
+                {
+                    box.style.display = "block";
+                }
+            }
+            else if(e.target.innerHTML === 'Drink'){
+                if(box.classList.contains('Drink'))
+                {
+                    box.style.display = "block";
+                }
+            }
+        })
+    })
+})
