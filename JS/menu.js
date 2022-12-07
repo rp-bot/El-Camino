@@ -158,8 +158,17 @@ menu.forEach((m) => {
 });
 
 function add(id) {
-	let fooditem = document.getElementById(id);
+	let quant = id.querySelector("#itemQuantity");
+	if (parseInt(quant.innerHTML) < 10) {
+		quant.innerHTML = parseInt(quant.innerHTML) + 1;
+	}
 }
-// function subtract()
+function subtract(id) {
+	let quant = id.querySelector("#itemQuantity");
+
+	if (parseInt(quant.innerHTML) > 0) {
+		quant.innerHTML = parseInt(quant.innerHTML) - 1;
+	}
+}
 
 // document.getElementById("minusbtn").onclick = subtract();
