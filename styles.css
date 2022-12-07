@@ -269,8 +269,6 @@ nav li img {
   background-color: #fcf3bf;
 }
 
-
-
 .content {
   margin-bottom: 30px;
   font-family: "main-font";
@@ -329,7 +327,7 @@ nav li img {
   margin: 1px;
 }
 
-.minusbtn, .plusbtn {
+/*.minusbtn, .plusbtn {
   padding: 5px;
   text-align: center;
   color: white;
@@ -338,7 +336,7 @@ nav li img {
   border-color: black;
   cursor: pointer;
 }
-
+*/
 /* about us */
 .aboutus-wrapper {
   width: 1110px;

@@ -99,12 +99,10 @@ const food = footitem.map(item => {
                 <p class="c-des">${item.des}</p>
                 <span class="c-price">${item.price}</span>
                 <div class="button-container">
-                    <button type="button" class="minusbtn" name="minus">
-                    -
+                    <button type="image" src="img/dash.svg" class="minusbtn" name="minus">
                     </button>
                     <p>0</p>
-                    <button type="button" class="plusbtn" name="plus">
-                    +
+                    <button type="image" src="img/plus.svg" class="plusbtn" name="plus">
                     </button>
                 </div>
             </div>
