@@ -476,32 +476,105 @@ footer p {
 
 
 /* cart */
-.fullcart {
-  display: grid; 
-  grid-template-columns: 100%; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "."
-    "."
-    "."; 
+
+.cart-wrapper{
+  font-family: main-font;
+  display: grid;
+  grid-template-rows: 80px 300px;
+  justify-content: center; 
+  justify-items: center;
+  
 }
-.fullcart h1 {
-  justify-self: center; 
-  align-self: end; 
-  width: 50%; 
-  height: 50%; 
-}
-.cart-container {
+.cart-items {
+  /* width: 1065px; */
+  /* border-radius: 30px; */
+  /* margin: auto; */
+  /* padding: 30px; */
+ background-color: #FCF3BF;
+
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 1fr; 
-  gap: 0px 0px; 
+  grid-template-columns: 1065px 500px; 
+  grid-template-rows: 300px; 
+  gap: 8px 8px; 
   grid-template-areas: 
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."; 
+    "a b"; 
+  justify-content: center; 
+  justify-items: center;
+  align-items: center;
+}
+
+
+.cart-content {
+  /* margin-bottom: 30px; */
+  font-family: "main-font";
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  /* grid-area: a; */
+  align-self: center;
+  justify-self: center;
+}
+.payment-container{
+  margin-bottom: 30px;
+  font-family: "main-font";
+  /* background-color: white; */
+  grid-area: b;
+  display: grid; 
+  grid-template-columns: 400px 100px; 
+  grid-template-rows: 50px auto auto auto 50px;
+  grid-template-areas: 
+    "ba bb"
+    "bc bd"
+    "be bf"
+    "bg bh"
+    "bi bj";
+  justify-self: start;
+  align-self: start;
+}
+.promotion{
+  grid-area:ba;
+  background-color: white;
+  border: 0;
+}
+.promotion-btn{
+  grid-area: bb;
+  background-color: rgb(33, 33, 33);
+  color:#f8f8f8;
+  border: 0;
+}
+.subtotal-lbl{
+  grid-area:bc;
+}
+.subtotal{
+  grid-area: bd;
+}
+.tax-lbl{
+  grid-area: be;
+}
+.tax{
+  grid-area: bf;
+}
+.grandtotal-lbl{
+  grid-area: bg;
+}
+.grandtotal{
+  grid-area: bh;
+}
+.checkout{
+  grid-column-start: bi;
+  grid-column-end: bj;
+  align-self:center;
+  justify-self:center;
+  
+  height: 50px;
+  width: 500px;
+  background-color: white;
+  border: 0;
+}
+
+.c-image {
+  width: 300px;
+  height: auto
 }
 
 /* Account Manager */

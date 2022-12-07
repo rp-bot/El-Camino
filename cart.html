@@ -25,17 +25,64 @@
 			<li><a href="menu.html">Menu</a></li>
 		</nav>
 
-		<div class="cart">
-			<h1 class="mycart">My Cart</h1>
-			<div class="cart-container">
-				<div></div>
-			</div>
+		<div class="cart-wrapper">
+			<header>
+				<h1>My Cart</h1>
+			</header>
+			<div class="cart-items">
+				<div class="cart-container">
+					<div class="foodbox ${item.type}" id="${item.itemID}">
+						<div class="cart-content">
+							<div class="c-image">
+								<img
+									src="img/Chicken and rice bake.jpeg"
+									alt=""
+								/>
+							</div>
+							<div class="c-info">
+								<span class="c-title">${item.FoodName}</span>
+								<p class="c-des">${item.des}</p>
+								<span class="c-price">${item.price}</span>
+							</div>
+						</div>
+					</div>
 
-			<div class="payment-container">
-				<div></div>
+					<!-- Menu Content -->
+					<!--<div class="foodbox">
+					  <div class="content">
+						<div class="c-image">
+						  <img src="img/Chicken and rice bake.jpeg" alt="">
+						</div>
+						<div class="c-info">
+						  <span class="c-title">Chicken and Rice Bake</span>
+						  <p class="c-des">Mexican chicken and rice, Mexican chicken and rice.</p>
+						  <span class="c-price">$13.99</span>
+						  <div class="button-container">
+							<button type="button" class="minusbtn" name="minus">
+							  -
+							</button>
+							<p>0</p>
+							<button type="button" class="plusbtn" name="plus">
+							  +
+							</button>
+						  </div>
+						</div>
+					  </div>
+					</div>-->
+				</div>
+				<div class="payment-container">
+					<input class="promotion" placeholder="enter promo code" />
+					<button class="promotion-btn">submit</button>
+					<div class="subtotal-lbl">Subtotal</div>
+					<div class="subtotal">$100</div>
+					<div class="tax-lbl">Tax</div>
+					<div class="tax">$3.8</div>
+					<div class="grandtotal-lbl">Grandtotal</div>
+					<div class="grandtotal">$103.80</div>
+					<button class="checkout">checkout</button>
+				</div>
 			</div>
 		</div>
-
 		<footer class="footer">
 			<aside>
 				<h2>Location</h2>
