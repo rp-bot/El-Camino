@@ -4,8 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="img/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="img/favicon-16x16.png"
+		/>
 		<link rel="stylesheet" href="styles.css" />
 		<title>El Camino</title>
 	</head>
@@ -31,47 +41,20 @@
 			<header>
 				<h1>My Cart</h1>
 			</header>
-			<div class="cart-items">
-				<div class="cart-container">
-					<div class="foodbox ${item.type}" id="${item.itemID}">
-						<div class="cart-content">
-							<div class="c-image">
-								<img
-									src="img/Chicken and rice bake.jpeg"
-									alt=""
-								/>
-							</div>
-							<div class="c-info">
-								<span class="c-title">${item.FoodName}</span>
-								<p class="c-des">${item.des}</p>
-								<span class="c-price">${item.price}</span>
-							</div>
-						</div>
-					</div>
-
-					<!-- Menu Content -->
-					<!--<div class="foodbox">
-					  <div class="content">
+			<div class="cart-items" id="cart_items">
+				<div class="foodbox ${item.type}" id="${item.itemID}">
+					<div class="cart-content">
 						<div class="c-image">
-						  <img src="img/Chicken and rice bake.jpeg" alt="">
+							<img src="img/Chicken and rice bake.jpeg" alt="" />
 						</div>
 						<div class="c-info">
-						  <span class="c-title">Chicken and Rice Bake</span>
-						  <p class="c-des">Mexican chicken and rice, Mexican chicken and rice.</p>
-						  <span class="c-price">$13.99</span>
-						  <div class="button-container">
-							<button type="button" class="minusbtn" name="minus">
-							  -
-							</button>
-							<p>0</p>
-							<button type="button" class="plusbtn" name="plus">
-							  +
-							</button>
-						  </div>
+							<span class="c-title">${item.FoodName}</span>
+							<p class="c-des">${item.des}</p>
+							<span class="c-price">${item.price}</span>
 						</div>
-					  </div>
-					</div>-->
+					</div>
 				</div>
+
 				<div class="payment-container">
 					<input class="promotion" placeholder="enter promo code" />
 					<button class="promotion-btn">submit</button>
@@ -108,5 +91,6 @@
 			</nav>
 			<p>CopyRight 2022 EL CAMINO.</p>
 		</footer>
+		<script src="js/cart.js"></script>
 	</body>
 </html>

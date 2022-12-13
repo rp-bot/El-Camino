@@ -157,16 +157,49 @@ menu.forEach((m) => {
 	});
 });
 
+const cart_items = document.getElementById("cart_items");
+
+var selected_items = {
+	a1: 0,
+	a2: 0,
+	a3: 0,
+	a4: 0,
+	a5: 0,
+	b1: 0,
+	b2: 0,
+	b3: 0,
+	b4: 0,
+	c1: 0,
+	c2: 0,
+	c3: 0,
+};
+
 function add(id) {
 	let quant = id.querySelector("#itemQuantity");
+	let item_id = id.id;
 	if (parseInt(quant.innerHTML) < 10) {
 		quant.innerHTML = parseInt(quant.innerHTML) + 1;
+	}
+	if (parseInt(quant.innerHTML) > 0) {
+		selected_items[item_id] = parseInt(quant.innerHTML);
+		console.log(selected_items);
+	} else {
+		selected_items[item_id] = 0;
+		console.log(selected_items);
 	}
 }
 function subtract(id) {
 	let quant = id.querySelector("#itemQuantity");
+	let item_id = id.id;
 	if (parseInt(quant.innerHTML) > 0) {
 		quant.innerHTML = parseInt(quant.innerHTML) - 1;
+	}
+	if (parseInt(quant.innerHTML) > 0) {
+		selected_items[item_id] = parseInt(quant.innerHTML);
+		console.log(selected_items);
+	} else {
+		selected_items[item_id] = 0;
+		console.log(selected_items);
 	}
 }
 
